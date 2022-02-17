@@ -1,0 +1,95 @@
+.body-grid {
+    display: grid;
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(212, 214, 57);
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60% 90%;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    ;
+}
+header {
+    grid-area: header;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "logo-area nav-area";
+    .logo-area {
+        grid-area: logo-area;
+        background-color: $lp-gen-background;
+        width: 100%;
+        height: 100%
+    }
+    .nav-area {
+        grid-area: nav-area;
+        background-color: $lp-color-wide;
+        width: 100%;
+        height: 100%;
+    }
+    }
+
+main {
+    grid-area: main;
+    background-color: $lp-gen-background;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 30% 25% 90% 200%;
+    grid-template-areas: 
+    "main-f-west main-west main-east main-f-east"
+    "main-f-west main-west main-east main-f-east"
+    "main-f-west main-west main-east none"
+    "ref ref ref ref"
+   ;
+   
+
+    .main-f-west {
+            grid-area: main-f-west;
+            background-color: $lp-color-behind-img;
+    }
+    .main-west {
+            grid-area: main-west;
+            background-color: $lp-color-behind-img;
+    }
+    .main-east {
+            grid-area: main-east;
+            background-color: $lp-color-behind-img;
+    }
+    .main-f-east {
+            grid-area: main-f-east;
+            background-color: $lp-color-wide;
+    }
+    .ref {
+        grid-area: ref;
+        background-color: midnightblue;
+        color: mintcream;
+        display: flex;
+        flex-direction: column;
+        .ref-img-box {
+            width: 100%;
+            height: 30%;
+            border: 2px pink dashed;
+            margin: 5% 0 5% 0;
+            @include flex-center-start();
+            .ref-img {
+                width: 38%;
+                height: 70%;
+                border-radius: 50%;
+                background-color: mistyrose;
+                margin: 3% 0 3% 0;
+                }
+        }
+
+    }
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgba(255, 24, 24, 0.863);
+    height: 30%;
+    width: 100%;
+
+}
