@@ -23,40 +23,5 @@ main {
 footer {
   grid-area: footer;
   border: 2px rgb(208, 212, 208) solid;
-  // .contact-section divides the footer into 3 section
-  .contact-section {
-    border: 2px rgb(192, 158, 158) solid;
-    width: 100%;
-
-  }
-  // cs-top(middle & bottom) means contact-section-top(middle & bottom)
-  .cs-top {
-    height: 50%;
-    // mixin > flex-flexDirection-column-alignItem-flexEnd
-    @include flex-fd-column-ai-end();
-    // first div inside contact-section-top (Ready to get started...)
-    div:first-child {
-      border: 2px white solid;
-      height: 60%;
-      width: 85%;
-      @include flex-ai-end;
-    }
-    // second div inside contact-section-top (some more information)
-    div:last-child {
-      border: 2px white solid;
-      height: 40%;
-      width: 85%;
-      @include flex-ai-center;
-      font-size: 10px;
-    }
-    // next part will be: 
-    // 1. create a button, clickable, that leads to a contacts me with email for-example. 2. After that add a github logo next to it that leads to my gitHub page
-  }
-  
-  .cs-middle {
-    height: 30%;
-  }
-  .cs-bottom {
-    height: 20%;
-  }
+  @include flex-fdColumn-aiEnd;
 }

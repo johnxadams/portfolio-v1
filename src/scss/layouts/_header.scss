@@ -3,8 +3,30 @@
     width: 50%;
     height: 100%;
   }
+  .social-network {
+    display: none;
+  }
   .nav-sect {
     border: 2px red dashed;
     width: 50%;
     height: 100%;
   }
+
+  @media only screen and (min-width: 800px){ 
+    .header {
+        .logo-sect {
+            width: 25%;
+        }
+        .social-network {
+            border: blue 2px dashed;
+            display: block;
+            width: 30%;
+            height: 100%;
+            z-index: 1;
+            background-color: darkmagenta;
+        }
+        .nav-sect {
+            width: 45%;
+        }
+    }
+}
