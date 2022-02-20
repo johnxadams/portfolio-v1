@@ -22,5 +22,21 @@ main {
 }
 footer {
   grid-area: footer;
-  border: 2px green solid;
+  border: 2px rgb(208, 212, 208) solid;
+  // .contact-section divides the footer into 3 section
+  .contact-section {
+    border: 2px rgb(192, 158, 158) solid;
+    width: 100%;
+    display: flex;
+  }
+  // cs-top means contact-section-stop
+  .cs-top {
+    height: 50%;
+  }
+  .cs-middle {
+    height: 30%;
+  }
+  .cs-bottom {
+    height: 20%;
+  }
 }
