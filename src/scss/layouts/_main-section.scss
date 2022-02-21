@@ -14,19 +14,30 @@
       height: 100%;
       position: relative;
       // profile-img layout-rhombus (raute) 
-      .img-container {
-        // orange(topRight)= width && pink(downRight)= height
-        border-top: orange 10px dotted;
-        border-right: 10px pink dotted;
+      .img-con-mobile-media {
         position: absolute;
-        width: 68%;
+        width: 69%;
         height: 51%;
         transform: rotate(57deg)
                    skew(20deg);
-        left: 28.5%;
-        top: -26%;
+        left: 28%;
+        top: -28%;
         z-index: 1;
-        opacity: .5;
+        // opacity: .9;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        // img in the mobile-media
+        img {
+          width: 110%;
+          object-fit: cover;
+          padding: 0 0 6% 4%;
+          transform: rotate(-44deg)
+                     skew(6deg)
+                     scale(1.6);
+                    //  display: none;
+                    // opacity: .5;
+        }
       }
     }
         // the right side of the background behind the profile-img
@@ -34,6 +45,9 @@
       background-color: white;
       width: 22%;
       height: 45%;
+      .img-con-desktop-media {
+        display: none;
+      }
     }
     // div:nth-child(2)::before{ 
     //   content: "";
