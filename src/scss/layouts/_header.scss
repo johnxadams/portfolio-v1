@@ -1,5 +1,5 @@
   .logo-sect {
-    border: 2px red dashed;
+    background-color: $lp-color-wide;
     width: 50%;
     height: 100%;
   }
@@ -7,7 +7,7 @@
     display: none;
   }
   .nav-sect {
-    border: 2px red dashed;
+    background-color: $header-nav-bg;
     width: 50%;
     height: 100%;
   }

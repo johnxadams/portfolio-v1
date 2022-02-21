@@ -3,6 +3,7 @@
     .contact-section {
         border: 2px rgb(192, 158, 158) solid;
         width: 100%;
+        background-color: $bgColor-footer-section;
       }
   // cs-top(middle & bottom) means contact-section-top(middle & bottom)
   .cs-top {
@@ -30,18 +31,24 @@
 //   email and gitHub link section
   .cs-middle {
     height: 30%;
+    width: 100%;
+    @include flex-jcEnd;
+    div {
+    height: 100%;
     width: 85%;
+    background-color: $bgColor-footer-section;
     @include flex-aiCenter;
-    div:first-child {
+      div:first-child {
         border: cornflowerblue 2px dotted;
         width: 35%;
         height: 60%;
-        background-color: darkgoldenrod ;
+        background-color: darkgoldenrod;
         @include flex-jcCenter-aiCenter;
     }
     div:last-child {
         border: darkkhaki 2px dotted;
         margin: 0 0 0 5%;
+    }
     }
   }
   .cs-bottom {

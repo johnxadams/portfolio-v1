@@ -3,7 +3,7 @@
     header {
         .logo-sect {
             width: 30%;
-            background-color: aqua;
+            background-color: $lp-gen-background;
         }
         .social-network {
             border: rgb(38, 255, 0) 2px dashed;
@@ -11,19 +11,20 @@
             width: 32%;
             height: 100%;
             z-index: 1;
-            background-color: blanchedalmond;
+            background-color: $lp-color-wide;
             position: relative;
         }
         .social-network::after {
             content: "";
             position: absolute;
-            background-color: blanchedalmond;
+            background-color: $lp-color-wide;
             width: 100%;
             height: 230%;
             top: 100%;
         }
         .nav-sect {
             width: 38%;
+            background-color: $lp-gen-background;
         }
     }
 }

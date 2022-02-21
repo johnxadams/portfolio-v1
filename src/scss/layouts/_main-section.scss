@@ -7,17 +7,18 @@
     display: flex;
     position: relative;
         // the left side(bigger box) of the background behind the profile-img
+        // das IMage solllte ich mit px oder rem bearbeiten, damit es statis bleibt. ansonten passt sich die größe an bei jeder kleinen veränderung. 
     div:first-child {
       border: burlywood 2px dashed;
-      background-color: beige;
+      background-color: $lp-color-wide;
       width: 78%;
       height: 100%;
       position: relative;
       // profile-img layout-rhombus (raute) 
       .img-con-mobile-media {
         position: absolute;
-        width: 69%;
-        height: 51%;
+        width: 67%;
+        height: 52%;
         transform: rotate(57deg)
                    skew(20deg);
         left: 28%;
@@ -68,6 +69,7 @@
   // next move is to define the elements inside the class-study-area !!!!
   .class-study-area {
     border: 2px rgb(0, 204, 255) dashed;
+    background-color: $bgColor-class-study-area;
     width: 100%;
     height: 70%;
     display: flex;
