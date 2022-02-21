@@ -1,0 +1,27 @@
+@media only screen and (min-width: 1025px) {
+    main {
+        .profile-img-area {
+            height: 50%;
+            div:first-child {
+            width: 10%;
+            }
+            div:nth-child(2) {
+                width: 90%;
+                height: 100%;
+                // background-color: aquamarine;
+            }
+            div:nth-child(2)::before {
+                z-index: 1;
+                // orange(topRight)= width && pink(downRight)= height
+                width: 17%;
+                height: 50%;
+                border-top: orange 10px dotted;
+                border-right: 10px pink dotted;
+                right: 45.2%;
+                top: 29%;
+                transform: rotate(55deg)
+                           skew(20deg);
+            }
+        }
+    }
+} 
