@@ -13,7 +13,7 @@
       height: 100%;
     }
         // the right side of the background behind the profile-img
-    div:last-child {
+    div:nth-child(2) {
       background-color: white;
       width: 22%;
       height: 45%;

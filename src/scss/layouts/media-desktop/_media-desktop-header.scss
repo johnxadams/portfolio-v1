@@ -1,6 +1,20 @@
-@media only screen and (min-width: 1000px){
-    // header is alredy in media-grid-flow scss
+// media query for desktop
+@media only screen and (min-width: 1025px){ 
     header {
-        
+        .logo-sect {
+            width: 30%;
+            background-color: aqua;
+        }
+        .social-network {
+            border: rgb(38, 255, 0) 2px dashed;
+            display: block;
+            width: 32%;
+            height: 100%;
+            z-index: 1;
+            background-color: darkmagenta;
+        }
+        .nav-sect {
+            width: 38%;
+        }
     }
 }
