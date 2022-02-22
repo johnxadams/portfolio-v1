@@ -1,0 +1,14 @@
+@media only screen and (min-width: 1025px) {
+    .cs-middle {
+        article {
+            div:first-child {
+                width: 9rem;
+            }
+        }
+    }
+    .cs-bottom {
+        div:first-child {
+            width: 30%;
+        }
+    }
+}

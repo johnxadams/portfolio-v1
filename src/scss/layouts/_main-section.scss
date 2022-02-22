@@ -6,7 +6,8 @@
     height: 30%;
     display: flex;
     position: relative;
-        // the left side(bigger box) of the background behind the profile-img
+
+              // the left side(bigger box) of the background behind the profile-img
         // das IMage solllte ich mit px oder rem bearbeiten, damit es statis bleibt. ansonten passt sich die größe an bei jeder kleinen veränderung. 
     div:first-child {
       border: burlywood 2px dashed;
@@ -14,35 +15,20 @@
       width: 78%;
       height: 100%;
       position: relative;
-      // profile-img layout-rhombus (raute) 
-      // topRight= width && downRight=height
-      // rhombus:responses perfectly at 390px width
-      .img-con-mobile-media {
-        position: absolute;
-        width: 13rem;
-        height: 13rem;
-        transform: rotate(56deg)
-                   skew(19deg);
-        left: 26%;
-        top: -28%;
-        z-index: 1;
-        // opacity: .9;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-        // img in the mobile-media
-        img {
-          width: 110%;
-          object-fit: cover;
-          padding: 0 0 6% 4%;
-          transform: rotate(-44deg)
-                     skew(6deg)
-                     scale(1.6);
-                    //  display: none;
-                    // opacity: .5;
-        }
+      @include flex-aiCenter;
+      
+      .huge-name-text {
+        border: 2px violet dotted;
+        width: 60%;
+        height: 50%;
+        font-family: 'londrina outline', sans-serif;
+        font-size: 60px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
       }
+
     }
+    
         // the right side of the background behind the profile-img
     div:nth-child(2) {
       background-color: white;

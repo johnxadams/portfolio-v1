@@ -1,6 +1,9 @@
 // media query for desktop
 @media only screen and (min-width: 1025px){ 
     header {
+        .media-mobile-box {
+            display: none;
+        }
         .logo-sect {
             width: 30%;
             background-color: $lp-gen-background;
