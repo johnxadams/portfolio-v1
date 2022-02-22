@@ -3,7 +3,7 @@
   display: grid;
   width: 100vw;
   height: 50vh;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr;
   grid-template-rows: 27vh 150vh 30vh;
   grid-template-areas:
     "header"
@@ -17,7 +17,7 @@ header {
 }
 main {
   grid-area: main;
-  border: 2px blue solid;
+  // border: 2px blue solid;
   display: flex;
   flex-direction: column;
 }

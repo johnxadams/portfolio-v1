@@ -12,10 +12,11 @@
                 width: 90%;
                 height: 100%;
                 position: relative;
-                background-color: $lp-gen-background;
+                background-color: $bgColor-default;
                 // thanks to the article, i could make the profile-img responsive
                 article {
-                    border: 2px red dotted;
+                    border: 2px rgb(196, 58, 58) dotted;
+                    background-color: $bgColor-profile-img;
                     width: 35.8%;
                     height: 80%;
                     margin: 0 0 0 22%;

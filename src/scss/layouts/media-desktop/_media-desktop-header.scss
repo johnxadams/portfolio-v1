@@ -6,7 +6,7 @@
         }
         .logo-sect {
             width: 30%;
-            background-color: $lp-gen-background;
+            background-color: $bgColor-header-logo;
         }
         .social-network {
             border: rgb(38, 255, 0) 2px dashed;
@@ -14,7 +14,7 @@
             width: 32%;
             height: 100%;
             z-index: 1;
-            background-color: $lp-color-wide;
+            background-color: $bgColor-social-network;
             position: relative;
         }
         // .social-network::after {
@@ -27,7 +27,7 @@
         // }
         .nav-sect {
             width: 38%;
-            background-color: $lp-gen-background;
+            background-color: $bgColor-header-nav;
         }
     }
 }

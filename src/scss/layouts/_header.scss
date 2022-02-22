@@ -5,19 +5,20 @@ header {
       // rhombus:responses perfectly at 390px width
       // figure out how to make it responsive - so that the img stay in the middle of the header seperation
       .media-mobile-box {
-        border: 2px rgb(202, 103, 103) solid;
-        width: 100%;
+        // border: 2px rgb(150, 47, 47) solid;
+        width: 95%;
         height: 23rem;
         @include flex-jcCenter-aiCenter;
         // margin: 0 0 0 7%;
         position: absolute;
         top: 20%;
+        left: 3%;
         z-index: 1;
       .img-con-mobile-media {
-        width: 11.5rem;
-        height: 11.5rem;
+        width: 10rem;
+        height: 10rem;
         transform: rotate(56.3deg)
-                   skew(18deg);
+                   skew(17deg);
         // opacity: .9;
         display: flex;
         align-items: center;
@@ -37,7 +38,7 @@ header {
         }
       }
   .logo-sect {
-    background-color: $lp-color-wide;
+    background-color: $bgColor-header-nav;
     width: 50%;
     height: 100%;
   }
@@ -45,9 +46,18 @@ header {
     display: none;
   }
   .nav-sect {
-    background-color: $header-nav-bg;
+    background-color: $bgColor-header-nav-mobile;
     width: 50%;
     height: 100%;
   }
 
+}
+
+
+@media only screen and (min-width: 482px) {
+  header {
+    .media-mobile-box {
+      left: 2.7%;
+    }
+  }
 }
