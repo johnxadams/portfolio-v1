@@ -14,14 +14,14 @@
             background-color: $lp-color-wide;
             position: relative;
         }
-        .social-network::after {
-            content: "";
-            position: absolute;
-            background-color: $lp-color-wide;
-            width: 100%;
-            height: 230%;
-            top: 100%;
-        }
+        // .social-network::after {
+        //     content: "";
+        //     position: absolute;
+        //     background-color: $lp-color-wide;
+        //     width: 100%;
+        //     height: 230%;
+        //     top: 100%;
+        // }
         .nav-sect {
             width: 38%;
             background-color: $lp-gen-background;

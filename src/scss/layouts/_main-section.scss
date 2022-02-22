@@ -16,13 +16,14 @@
       position: relative;
       // profile-img layout-rhombus (raute) 
       // topRight= width && downRight=height
+      // rhombus:responses perfectly at 390px width
       .img-con-mobile-media {
         position: absolute;
-        width: 67%;
-        height: 52%;
-        transform: rotate(57deg)
-                   skew(20deg);
-        left: 28%;
+        width: 13rem;
+        height: 13rem;
+        transform: rotate(56deg)
+                   skew(19deg);
+        left: 26%;
         top: -28%;
         z-index: 1;
         // opacity: .9;
@@ -86,8 +87,8 @@
       // these are the circled img-box inside the class-study-area 
       div {
         border: chocolate 2px solid;
-        width: 40%;
-        height: 57%;
+        width: 9rem;
+        height: 9rem;
         border-radius: 50%;
         margin: 3% 0 0 0;
       }
