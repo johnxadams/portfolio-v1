@@ -82,21 +82,36 @@
       // these are the circled img- inside the class-study-area 
 
       div:nth-child(1) {
-        border: pink 4px solid;
+        border: pink 2px solid;
         background-color: rgb(139, 139, 172);
         width: 9rem;
         height: 9rem;
         border-radius: 50%;
-        margin: 0 0 13% 0;
+        margin: 0 0 3% 0;
         overflow: hidden;
         position: relative;
         @include flex-jcCenter-aiCenter;
       }
-      .periodic-table-gif {
-          object-fit: cover;
-          width: 420%;
-          margin-bottom: 55%;
-        }
+.periodic-hov {
+  background-image: url("../../images/periodic-table-img.jpeg");
+  background-size: 440%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: 81%;
+}
+.periodic-hov:hover{
+  background-image: url("../../images/periodic-table-gif1.gif");
+  background-size: 440%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: 81%;
+  // it seems to be important to place the background-position-y under center
+}
+      // .periodic-table-gif {
+      //     object-fit: cover;
+      //     width: 430%;
+      //     margin-bottom: 70%;
+      //   }
         .gallery-wall {
           object-fit: cover;
           width: 180%
@@ -104,6 +119,11 @@
         .web-base-design {
           object-fit: cover;
           width: 150%;
+        }
+        span {
+          border: 2px green dotted;
+          width: 70%;
+          height: 5rem;
         }
       }
     }
