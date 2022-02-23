@@ -4,15 +4,29 @@
             height: 50%;
             div:first-child {
             width: 10%;
+            background-color: aqua;
+            z-index: 1;
             .img-con-mobile-media {
                 display: none;
+                }.huge-name-text-ad, .huge-name-text-ams {
+                    font-size: 90px;
+                }
+                .huge-name-text-ad {
+                    width: 10rem;
+                    margin-left: 7%;
+                }
+                .huge-name-text-ams {
+                    width: 18rem;
+                    margin-left: 15%;
                 }
             }
+            // huge section in the main
             div:nth-child(2) {
                 width: 90%;
                 height: 100%;
                 position: relative;
                 background-color: $bgColor-default;
+                // border: 5px red solid;
                 // thanks to the article, i could make the profile-img responsive
                 article {
                     border: 2px rgb(196, 58, 58) dotted;
