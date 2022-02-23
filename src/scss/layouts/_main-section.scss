@@ -1,130 +1,153 @@
+// main profile-img section
+.profile-img-area {
+  // border: 2px rgb(0, 204, 255) dashed;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  position: relative;
+  // background-color: brown;
 
-  // main profile-img section
-  .profile-img-area {
-    // border: 2px rgb(0, 204, 255) dashed;
+  // the left side(bigger box) of the background behind the profile-img
+  // das IMage solllte ich mit px oder rem bearbeiten, damit es statis bleibt. ansonten passt sich die größe an bei jeder kleinen veränderung.
+  div:first-child {
+    // border: burlywood 2px dashed;
+    background-color: $bgColor-default;
+    width: 78%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    // .huge-name-text-ad {
+    //   border: 2px violet dotted;
+    //   width: 100%;
+    //   height: 20%;
+    //   font-family: 'Bungee Shade', 'londrina outline', sans-serif;
+    //   font-size: 60px;
+    //   text-transform: uppercase;
+    //   letter-spacing: 3px;
+    //   margin-top: 5%;
+    //   background-color: transparent;
+    //   text-align: end;
+    // }
+  }
+
+  // the right side of the background behind the profile-img
+  div:nth-child(2) {
+    background-color: $bgColor-header-nav-mobile;
+    width: 22%;
+    height: 45%;
+    background-color: aqua;
+    .img-con-desktop-media {
+      display: none;
+    }
+  }
+  // div:nth-child(2)::before{
+  //   content: "";
+  //   background-color: cornflowerblue;
+  //   width: 51%;
+  //   height: 50%;
+  //   position: absolute;
+  //   transform: rotate(57deg)
+  //              skew(20deg);
+  //   right: 26.5%;
+  //   top: -25%;
+  //   background-image: url(../../images/john-atelier.jpg);
+  //   background-size: contain;
+  //   display: none;
+  // }
+}
+// inside the class-study-area are three divs. iI'm targeting them with the nth-child
+// next move is to define the elements inside the class-study-area !!!!
+.class-study-area {
+  border: 2px rgb(0, 204, 255) dashed;
+  background-color: $bgColor-class-study-area;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  div:first-child,
+  div:nth-child(2),
+  div:nth-child(3) {
+    border: chocolate 10px dashed;
+    background-color: rgb(74, 151, 218);
     width: 100%;
     height: 30%;
     display: flex;
-    position: relative;
-    // background-color: brown;
-
-              // the left side(bigger box) of the background behind the profile-img
-        // das IMage solllte ich mit px oder rem bearbeiten, damit es statis bleibt. ansonten passt sich die größe an bei jeder kleinen veränderung. 
-    div:first-child {
-      // border: burlywood 2px dashed;
-      background-color: $bgColor-default;
-      width: 78%;
-      height: 100%;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      // .huge-name-text-ad {
-      //   border: 2px violet dotted;
-      //   width: 100%;
-      //   height: 20%;
-      //   font-family: 'Bungee Shade', 'londrina outline', sans-serif;
-      //   font-size: 60px;
-      //   text-transform: uppercase;
-      //   letter-spacing: 3px;
-      //   margin-top: 5%;
-      //   background-color: transparent;
-      //   text-align: end;
-      // }
-
-    }
-    
-        // the right side of the background behind the profile-img
-    div:nth-child(2) {
-      background-color: $bgColor-header-nav-mobile;
-      width: 22%;
-      height: 45%;
-      background-color: aqua;
-      .img-con-desktop-media {
-        display: none;
-      }
-    }
-    // div:nth-child(2)::before{ 
-    //   content: "";
-    //   background-color: cornflowerblue;
-    //   width: 51%;
-    //   height: 50%;
-    //   position: absolute;
-    //   transform: rotate(57deg)
-    //              skew(20deg);
-    //   right: 26.5%;
-    //   top: -25%;
-    //   background-image: url(../../images/john-atelier.jpg);
-    //   background-size: contain;
-    //   display: none;
-    // }
-  }
-  // inside the class-study-area are three divs. iI'm targeting them with the nth-child
-  // next move is to define the elements inside the class-study-area !!!!
-  .class-study-area {
-    border: 2px rgb(0, 204, 255) dashed;
-    background-color: $bgColor-class-study-area;
-    width: 100%;
-    height: 70%;
-    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    justify-content: space-evenly;
-    div:first-child, div:nth-child(2), div:nth-child(3) {
-      border: chocolate 10px dashed;
-      background-color: rgb(74, 151, 218);
-      width: 100%;
-      height: 30%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      // these are the circled img- inside the class-study-area 
+    // these are the circled img- inside the class-study-area
 
-      div:nth-child(1) {
-        border: pink 2px solid;
-        background-color: rgb(139, 139, 172);
-        width: 9rem;
-        height: 9rem;
-        border-radius: 50%;
-        margin: 0 0 3% 0;
-        overflow: hidden;
-        position: relative;
-        @include flex-jcCenter-aiCenter;
-      }
-.periodic-hov {
-  background-image: url("../../images/periodic-table-img.jpeg");
-  background-size: 440%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-position-y: 81%;
-}
-.periodic-hov:hover{
-  background-image: url("../../images/periodic-table-gif1.gif");
-  background-size: 440%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-position-y: 81%;
-  // it seems to be important to place the background-position-y under center
-}
-      // .periodic-table-gif {
-      //     object-fit: cover;
-      //     width: 430%;
-      //     margin-bottom: 70%;
-      //   }
-        .gallery-wall {
-          object-fit: cover;
-          width: 180%
-        }
-        .web-base-design {
-          object-fit: cover;
-          width: 150%;
-        }
-        span {
-          border: 2px green dotted;
-          width: 70%;
-          height: 5rem;
-        }
-      }
+    div:nth-child(1) {
+      border: pink 2px solid;
+      background-color: rgb(139, 139, 172);
+      width: 9rem;
+      height: 9rem;
+      border-radius: 50%;
+      margin: 0 0 3% 0;
+      overflow: hidden;
+      position: relative;
+      @include flex-jcCenter-aiCenter;
     }
-  
+    .periodic-hov {
+      background-image: url("../../images/periodic-table-img.jpeg");
+      background-size: 440%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-position-y: 81%;
+      transition: .7s;
+    }
+    .periodic-hov:hover {
+      background-image: url("../../images/periodic-table-gif1.gif");
+      background-size: 440%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-position-y: 81%;
+      transform: scale(1.3);
+      transition: .7s;
+      // it seems to be important to place the background-position-y under center
+    }
+    .gallery-hov {
+      background-image: url("../../images/gallery-wall-img.jpeg");
+      background-size: 200%;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: .7s;
+      // background-position-y: 81%;
+    }
+    .gallery-hov:hover {
+      background-image: url("../../images/gallery-wall-gif1.gif");
+      background-size: 200%;
+      background-position: center;
+      background-repeat: no-repeat;
+      // background-position-y: 81%;
+      transform: scale(1.3);
+      transition: .7s;
+    }
+    .web-base-hov {
+      background-image: url("../../images/web-base-design-img.jpeg");
+      background-size: 150%;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: .7s;
+      // background-position-y: 81%;
+    }
+    .web-base-hov:hover {
+      background-image: url("../../images/web-base-design-gif1.gif");
+      background-size: 150%;
+      background-position: center;
+      background-repeat: no-repeat;
+      // background-position-y: 81%;
+      transform: scale(1.3);
+      transition: .7s;
+    }
+    span {
+      border: 2px green dotted;
+      width: 70%;
+      height: 5rem;
+    }
+  }
+}
