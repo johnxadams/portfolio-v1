@@ -11,12 +11,21 @@
         }
         .social-network {
             border: rgb(38, 255, 0) 2px dashed;
-            display: block;
+            @include flex-jcCenter-aiCenter;
             width: 32%;
             height: 100%;
             z-index: 1;
             background-color: $bgColor-social-network;
             position: relative;
+            ul {
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                li {
+                    font-size: 50px;
+                    list-style: none;
+                }
+            }
         }
         // .social-network::after {
         //     content: "";

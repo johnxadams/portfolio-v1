@@ -6,6 +6,7 @@
     height: 30%;
     display: flex;
     position: relative;
+    // background-color: brown;
 
               // the left side(bigger box) of the background behind the profile-img
         // das IMage solllte ich mit px oder rem bearbeiten, damit es statis bleibt. ansonten passt sich die größe an bei jeder kleinen veränderung. 
@@ -19,28 +20,17 @@
       flex-direction: column;
       justify-content: center;
 
-      .huge-name-text-ad {
-        border: 2px violet dotted;
-        width: 100%;
-        height: 20%;
-        font-family: 'Bungee Shade', 'londrina outline', sans-serif;
-        font-size: 60px;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        margin-top: 5%;
-        background-color: transparent;
-        text-align: end;
-      }
-      // .huge-name-text-ams {
+      // .huge-name-text-ad {
       //   border: 2px violet dotted;
-      //   width: 75%;
+      //   width: 100%;
       //   height: 20%;
       //   font-family: 'Bungee Shade', 'londrina outline', sans-serif;
       //   font-size: 60px;
       //   text-transform: uppercase;
-      //   margin-left: 15%;
-      //   margin-top: -8%;
+      //   letter-spacing: 3px;
+      //   margin-top: 5%;
       //   background-color: transparent;
+      //   text-align: end;
       // }
 
     }
@@ -81,37 +71,39 @@
     flex-direction: column;
     justify-content: space-evenly;
     div:first-child, div:nth-child(2), div:nth-child(3) {
-      border: chocolate 2px dashed;
+      border: chocolate 10px dashed;
       background-color: rgb(74, 151, 218);
       width: 100%;
       height: 30%;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
+      flex-direction: column;
       // these are the circled img- inside the class-study-area 
-      div {
-        border: chocolate 4px solid;
+
+      div:nth-child(1) {
+        border: pink 4px solid;
         background-color: rgb(139, 139, 172);
         width: 9rem;
         height: 9rem;
         border-radius: 50%;
-        margin: 3% 0 0 0;
+        margin: 0 0 13% 0;
         overflow: hidden;
         position: relative;
+        @include flex-jcCenter-aiCenter;
       }
       .periodic-table-gif {
-          width: 37rem;
-          position: absolute;
-          bottom: -10%;
+          object-fit: cover;
+          width: 420%;
+          margin-bottom: 55%;
         }
         .gallery-wall {
-          width: 15rem;
-          position: absolute;
-          // bottom: 1%;
-          right: 2%;
+          object-fit: cover;
+          width: 180%
         }
         .web-base-design {
-          width: 13rem;
+          object-fit: cover;
+          width: 150%;
         }
       }
     }

@@ -78,14 +78,19 @@
                         width: 10rem;
                         height: 10rem;
                         margin-right: 5%;
+                        @include flex-jcCenter-aiCenter;
+
+                    }
+                    .periodic-table-gif {
+                        object-fit: cover;
                     }
             }
         }
     }
 } 
 
-@media only screen and (min-width: 1200px) {
-    .div:nth-child(2) {
-        background-color: aliceblue;
-    }
-}
+// @media only screen and (min-width: 1200px) {
+//     .div:nth-child(2) {
+//         background-color: aliceblue;
+//     }
+// }
