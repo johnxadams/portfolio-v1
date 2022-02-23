@@ -5,11 +5,13 @@
   height: 30%;
   display: flex;
   position: relative;
-  // background-color: brown;
+  background-color: brown;
 
   // the left side(bigger box) of the background behind the profile-img
-  // das IMage solllte ich mit px oder rem bearbeiten, damit es statis bleibt. ansonten passt sich die größe an bei jeder kleinen veränderung.
-  div:first-child {
+  // das IMage sollte ich mit px oder rem bearbeiten, damit es statis bleibt. ansonten passt sich die größe an bei jeder kleinen veränderung.
+  
+  }
+  .left-sideBar-main {
     // border: burlywood 2px dashed;
     background-color: $bgColor-default;
     width: 78%;
@@ -18,6 +20,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border: 5px blue dotted;
 
     // .huge-name-text-ad {
     //   border: 2px violet dotted;
@@ -34,11 +37,11 @@
   }
 
   // the right side of the background behind the profile-img
-  div:nth-child(2) {
+  .right-sideBar-mobile {
     background-color: $bgColor-header-nav-mobile;
     width: 22%;
-    height: 45%;
-    background-color: aqua;
+    height: 100%;
+    background-color: rosybrown;
     .img-con-desktop-media {
       display: none;
     }
@@ -57,7 +60,8 @@
   //   background-size: contain;
   //   display: none;
   // }
-}
+
+
 // inside the class-study-area are three divs. iI'm targeting them with the nth-child
 // next move is to define the elements inside the class-study-area !!!!
 .class-study-area {

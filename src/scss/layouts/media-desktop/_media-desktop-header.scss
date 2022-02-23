@@ -6,11 +6,11 @@
         }
         .logo-sect {
             width: 30%;
-            height: 100%;
+            height: 100%;border: 5x blue solid;
             background-color: $bgColor-header-logo;
         }
         .social-network {
-            border: rgb(38, 255, 0) 2px dashed;
+            // border: rgb(38, 255, 0) 2px dashed;
             @include flex-jcCenter-aiCenter;
             width: 32%;
             height: 100%;
@@ -27,16 +27,8 @@
                 }
             }
         }
-        // .social-network::after {
-        //     content: "";
-        //     position: absolute;
-        //     background-color: $lp-color-wide;
-        //     width: 100%;
-        //     height: 230%;
-        //     top: 100%;
-        // }
         .nav-sect {
-            width: 38%;
+            width: 38;
             height: 100%;
             background-color: $bgColor-header-nav;
         }

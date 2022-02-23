@@ -4,7 +4,7 @@
             height: 50%;
             div:first-child {
             width: 10%;
-            background-color: aqua;
+            background-color: brown;
             z-index: 1;
             .img-con-mobile-media {
                 display: none;
@@ -21,23 +21,22 @@
                 }
             }
             // huge section in the main
-            div:nth-child(2) {
+            .big-mainDesktop-bg {
                 width: 90%;
                 height: 100%;
                 position: relative;
                 background-color: $bgColor-default;
                 // border: 5px red solid;
                 // thanks to the article, i could make the profile-img responsive
-                article {
-                    border: 2px rgb(196, 58, 58) dotted;
+                .desktop-profileImg-carrier {
+                    // border: 2px rgb(196, 58, 58) dotted;
                     background-color: $bgColor-profile-img;
-                    width: 35.8%;
+                    width: 31.65%;
                     height: 80%;
-                    margin: 0 0 0 22%;
+                    margin: 0 0 0 18.71%;
                     @include flex-jcCenter-aiCenter;
                     .img-con-desktop-media {
                         display: block;
-                        background-color: rgb(62, 72, 204), 0;
                         // orange(topRight)= width && pink(downRight)= height
                         // border-top: orange 10px dotted;
                         // border-right: 10px pink dotted;

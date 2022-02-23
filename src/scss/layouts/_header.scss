@@ -1,9 +1,13 @@
 header {
     position: relative;
+    border: 2px violet solid;
+    display: flex;
+    width: 100%;
         // profile-img layout-rhombus (raute) 
       // topRight= width && downRight=height
       // rhombus:responses perfectly at 390px width
       // figure out how to make it responsive - so that the img stay in the middle of the header seperation
+      // media-mobile-box is the great container for my profile-img
       .media-mobile-box {
         border: 2px rgb(150, 47, 47) solid;
         width: 75%;
@@ -14,33 +18,38 @@ header {
         top: 19%;
         left: 13.5%;
         z-index: 1;
-      .img-con-mobile-media {
-        width: 10rem;
-        height: 10rem;
-        transform: rotate(55.3deg)
-                   skew(17deg);
-        // opacity: .9;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-        margin-right: 20px;
-        // img in the mobile-media
-        img {
-          width: 110%;
-          object-fit: cover;
-          padding: 0 0 6% 4%;
-          transform: rotate(-44deg)
-                     skew(6deg)
-                     scale(1.6);
-                    //  display: none;
-                    // opacity: .5;
+        .img-con-mobile-media {
+          width: 10rem;
+          height: 10rem;
+          transform: rotate(55.3deg)
+                    skew(17deg);
+          // opacity: .9;
+          display: flex;
+          align-items: center;
+          overflow: hidden;
+          margin-right: 20px;
+          // img in the mobile-media
+          img {
+            width: 110%;
+            object-fit: cover;
+            padding: 0 0 6% 4%;
+            transform: rotate(-44deg)
+                      skew(6deg)
+                      scale(1.6);
+            // display: none;
+              // opacity: .5;
+            }
           }
-        }
-      }
+       }
   .logo-sect {
     background-color: $bgColor-header-nav;
     width: 50%;
     height: 100%;
+    .logo-container {
+    width: 5rem;
+    height: 5rem;
+    border: 3px gray solid;
+    }
   }
   .social-network {
     display: none;
