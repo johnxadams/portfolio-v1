@@ -121,16 +121,19 @@
 
         }
         .class-study-area {
-            align-items: flex-end;
+            align-items: center;
             div:first-child, div:nth-child(2), div:last-child  {
                 width: 90%;
-                justify-content: flex-start;
+                justify-content: space-evenly;
                 flex-direction: row-reverse;
                 align-items: center;
+                // a {
+
+                //     margin-right: 5%;
+                // }
                     div:nth-child(1) {
                         width: 11rem;
                         height: 11rem;
-                        margin-right: 5%;
                         @include flex-jcCenter-aiCenter;
                         margin: 0 5% 0 0;
                     }
@@ -139,7 +142,10 @@
                     }
                     span {
                         margin-right: 5%;
-                        width: 60%;
+                        width: 70%;
+                        font-size: 20px;
+                        font-family: Abel ,heebo, sans-serif;
+                        // border: 1px black solid;
                     }
             }
         }
@@ -155,7 +161,7 @@
 @media only screen and (min-width: 1425px) {
     .name-containerDesk {
         position: absolute;
-        border: 3px rgb(12, 12, 17) dashed;
+        // border: 3px rgb(12, 12, 17) dashed;
         bottom: 15%;
         z-index: 1;
         display: flex;

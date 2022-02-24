@@ -1,7 +1,7 @@
 
     // .contact-section divides the footer into 3 section
     .contact-section {
-        border: 2px rgb(192, 158, 158) solid;
+        // border: 2px rgb(192, 158, 158) solid;
         width: 100%;
         background-color: $bgColor-footer-section;
       }
@@ -12,14 +12,14 @@
     @include flex-fdColumn-aiEnd();
     // first div inside contact-section-top (Ready to get started...)
     div:first-child {
-      border: 2px white solid;
+      // border: 2px white solid;
       height: 60%;
       width: 85%;
       @include flex-aiEnd;
     }
     // second div inside contact-section-top (some more information)
     div:last-child {
-      border: 2px white solid;
+      // border: 2px white solid;
       height: 40%;
       width: 85%;
       font-size: 10px;
@@ -39,14 +39,15 @@
     background-color: $bgColor-footer-section;
     @include flex-aiCenter;
       div:first-child {
-        border: cornflowerblue 2px dotted;
+        // border: cornflowerblue 2px dotted;
         width: 35%;
         height: 60%;
         background-color: darkgoldenrod;
         @include flex-jcCenter-aiCenter;
+        cursor: pointer;
     }
     div:last-child {
-        border: darkkhaki 2px dotted;
+        // border: darkkhaki 2px dotted;
         margin: 0 0 0 5%;
     }
     }
@@ -56,7 +57,7 @@
         display: flex;
         justify-content: flex-end;
         div:first-child {
-            border: darkmagenta 2px dotted;
+            // border: darkmagenta 2px dotted;
             width: 60%;
             height: 100%;
             font-size: 15px;

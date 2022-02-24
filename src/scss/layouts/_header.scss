@@ -1,6 +1,6 @@
 header {
     position: relative;
-    border: 2px violet solid;
+    // border: 2px violet solid;
     display: flex;
     width: 100%;
         // profile-img layout-rhombus (raute) 
@@ -45,10 +45,15 @@ header {
     background-color: $bgColor-header-nav;
     width: 50%;
     height: 100%;
+    @include flex-jcCenter-aiCenter;
     .logo-container {
     width: 5rem;
     height: 5rem;
-    border: 3px gray solid;
+    background-image: url('../../images/jpa-log.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 4px rgb(197, 139, 139);
+    border-radius: 5px;
     }
   }
   .social-network {
