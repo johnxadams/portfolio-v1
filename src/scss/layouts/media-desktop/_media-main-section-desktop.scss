@@ -4,7 +4,7 @@
             height: 50%;
             div:first-child {
             width: 10%;
-            background-color: brown;
+            background-color: white;
             z-index: 1;
             .img-con-mobile-media {
                 display: none;
@@ -63,6 +63,56 @@
                                         top: -4%;
                                         right: 10%;
                                    }
+                    }
+                }
+                .name-containerDesk {
+                    position: absolute;
+                    width: 25rem;
+                    height: 20rem;
+                    border: 3px blue dashed;
+                    bottom: 0%;
+                    left: -5%;
+                    z-index: 1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    span {
+                        font-family:'Bungee Hairline', 'Londrina Shadow';
+                        font-size: 125.5px;
+                        text-transform: uppercase;
+                        color: rgba(48, 48, 48, 0.9);
+                    }
+                    span:first-child {
+                        // background-color: rgba(0, 128, 0, 0.5) ;
+                        font-size: 135px;
+                        position: relative;
+                        top: 22%;
+                    }
+                    span:nth-child(2) {
+                        background-color: rgba(238, 130, 238, 0) ;
+                    }
+                }
+                .info-containerDesk {
+                    position: absolute;
+                    width: 25rem;
+                    height: 20rem;
+                    border: 3px violet dashed;
+                    top: 6%;
+                    right: 25%;
+                    @include flex-column-aiCenter-jcEvenly;
+                    // display: flex;
+
+                    
+                    span {
+                        font-size: 25px;
+                        font-family: Abel ,heebo, sans-serif;
+                    }
+                    span:first-child {
+                        font-weight: bolder;
+                        border: 2px red dashed;
+                    }
+                    span:nth-child(2) {
+                        margin-top: 5%;
                     }
                 }
             }
