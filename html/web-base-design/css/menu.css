@@ -1,0 +1,58 @@
+header {
+    width: 100vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* here to make borders align with menu + mani */
+#headerContainer {
+    width: 54vw;
+    height: 70%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav {
+    height: 50%;
+    flex-grow: 1.3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav > ul {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > ul > li {
+    display: inline;
+    font-size: 1.2rem;
+    transition: .4s;
+}
+nav > ul > li > a:link,
+nav > ul > li > a:visited {
+    color: var(--font-color);
+    text-decoration: none;
+}
+nav > ul > li > a:active {
+    color: var(--font-color-active);
+    transition: .4s;
+}
+nav > ul > li:hover {
+    transform: scale(1.2);
+    transition: .4s;
+} 
+#headerContainer > #imgLogo {
+    height: 45%;
+    background-image: url(../images/logo_001.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+
+} 
+

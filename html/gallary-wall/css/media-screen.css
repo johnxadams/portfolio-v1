@@ -1,0 +1,30 @@
+@media only screen and (max-width: 450px) {
+    h1, h2 {
+        font-size: 0.9rem;
+        width: 160%;
+        text-align: center;
+    }
+    #main span {
+        top: 45%;
+        right: 40%;
+    }
+    #blue-beanie {
+        right: 38%;
+    }
+    #lavendel {
+        top: 20%;
+        right: 50%;
+    }
+    #sunset-sea {
+        top: 25%;
+        right: 40%;
+    }
+    #meditate {
+        top: 20%;
+        right: 25%;
+    }
+    .img {
+    padding: 0.05rem;
+    padding-bottom: .3rem;
+    }
+}

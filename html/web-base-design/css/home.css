@@ -1,0 +1,95 @@
+main {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    margin: 2% 0 0 0;
+}
+#mainContainer {
+    width: 54vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+}
+#mainContainer .split {
+    width: 54vw;
+    height: 80%;
+    display: flex; 
+}
+.left {
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+#mainContainer .split > h1 {
+    font-size: 180%;
+    font-weight: 400;
+    word-spacing: 0.2rem;
+    padding: 0 0 3% 0;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: flex-end;
+    /* justify-content: flex-end; */
+}
+.left article {
+    /*  */
+}
+.left .buttons {
+    width: 75%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    margin: 8% 0 4% 0;
+}
+.left .buttons input[type=button] {
+    border: none;
+    height: 3rem;
+    width: 47%;
+    color: var(--font-color);
+    font-size: .98rem;
+    font-weight: 900;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.left .buttons input[type=button]:first-child {
+    background-color: rgb(75, 151, 75);
+}
+.left .buttons input[type=button]:first-child:active {
+    background-color: rgb(50, 102, 50);
+    transition: .4s;
+} 
+.left .buttons input[type=button]:last-child {
+    background-color: rgb(6, 118, 184);
+}
+.left .buttons input[type=button]:last-child:active {
+    background-color: rgb(4, 88, 136);
+    transition: .4s;
+} 
+#mainContainer .right {
+    position: relative;
+    width: 37vw;
+    height: 55vh;
+}
+#mainContainer .right .phone {
+    width: 45vw;
+    height: 53vh;
+}
+#mainContainer .right .white {
+    background-image: url(../images/phone_001.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 37%;
+    
+}
+#mainContainer .right .black {
+    background-image: url(../images/phone_002.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15%;
+    top: 2%;
+    z-index: 1;
+}
