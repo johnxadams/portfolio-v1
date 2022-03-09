@@ -9,7 +9,7 @@ header {
       // figure out how to make it responsive - so that the img stay in the middle of the header seperation
       // media-mobile-box is the great container for my profile-img
       .media-mobile-box {
-        border: 2px rgb(150, 47, 47) solid;
+        // border: 2px rgb(150, 47, 47) solid;
         width: 75%;
         height: 23rem;
         @include flex-jcCenter-aiCenter;
